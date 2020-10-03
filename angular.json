@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "git-api"
+    }
+  },
+  "defaultProject": "git-api",
+  "cli": {
+    "analytics": false
+  }
 }
