@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<!-- <div *ngIf="profile">
+    <div class="name">
+        {{}}
+    </div>
+</div> -->
+<form action="" class="form">
+    <div class="search">
+        <input type="text" placeholder="search git users" [(ngMOdel)]="username" (keyup)="findProfile">
+    </div>
+</form>
+<div *ngIf="profile">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="{{profile}}" alt="">
+        </div>
+    </div>
+</div>
