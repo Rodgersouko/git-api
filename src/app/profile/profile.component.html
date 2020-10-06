@@ -3,15 +3,17 @@
         {{}}
     </div>
 </div> -->
-<form action="" class="form">
-    <div class="search">
-        <input type="text" placeholder="search git users" [(ngMOdel)]="username" (keyup)="findProfile">
-    </div>
-</form>
-<div *ngIf="profile">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="{{profile}}" alt="">
+    <form action="" class="form">
+        <div class="search">
+            <input type="text" placeholder="search git users" name="username" (keyup)="findData()">
+        </div>
+    </form>
+    <div>
+        <div class="row" >
+            <div class="col-sm-3">
+                <img src="{{data.avatar}}" class="img-circle img-responsive" alt="profile">
+            </div>
+            
         </div>
     </div>
-</div>
+

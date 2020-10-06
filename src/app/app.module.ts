@@ -15,6 +15,7 @@ import { ProfileComponent } from '../app/profile/profile.component';
   declarations: [
     AppComponent,
     ProfileComponent
+
     
   ],
   imports: [

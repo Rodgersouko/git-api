@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { profile } from 'console';
 //import { profile } from 'console';
 
 @Component({
@@ -9,11 +10,12 @@ import { DataService } from '../data.service';
 })
 export class ProfileComponent implements OnInit {
   data:any[];
+  profile: Object;
 
   constructor(private dataService: DataService) { 
-    this.dataService.getdata().subscribe(data => {
-      console.log(data); 
-      this.data = data;
+    this.dataService.getdata().subscribe(profile => {
+      console.log(profile); 
+      this.profile = profile;
     });
   }
 
