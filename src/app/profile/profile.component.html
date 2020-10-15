@@ -1,19 +1,27 @@
-<!-- <div *ngIf="profile">
-    <div class="name">
-        {{}}
+<div *ngIf="profile">
+    <div class="panel panel-default">
+        {{profile.name}}<small>{{profile.login}}</small>
     </div>
-</div> -->
+</div>
     <form action="" class="form">
         <div class="search">
             <input type="text" placeholder="search git users" name="username" (keyup)="findData()">
         </div>
     </form>
-    <div>
+    <div class="panel-body">
         <div class="row" >
             <div class="col-sm-3">
-                <img src="{{data.avatar}}" class="img-circle img-responsive" alt="profile">
+                <img src="{{profile.avatar_url}}" alt="profile">
             </div>
-            
+            <div class="col-sm-5">
+                <ul class="list-group">
+                    <li class="list-group-item">{{profile}}</li>
+                    <li class="list-group-item">tutor</li>
+                    <li class="list-group-item">for bookings</li>
+                    <li class="list-group-item">{{profile}}</li>
+                </ul>
+
+            </div>
         </div>
     </div>
 
