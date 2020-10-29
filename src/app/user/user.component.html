@@ -1,12 +1,12 @@
-<h1 style="margin-left: 300px; background-color:black; color: rgb(231, 230, 225);">The github user's Data</h1>
+<h1 style="text-align: center;">Github Profile</h1>
 <br><br><br>
 <div class="container">
     <div class="form-group">
 
         <label for="name">
-            <h4><u>Search The github user here:</u></h4>
+            <h4><u>Search for github user here : </u></h4>
         </label>
-        <input type="text" name="githubUser" placeholder="Type the Github Username" [(ngModel)]="userName">
+        <input type="text" name="githubUser" placeholder="Type Github Username" [(ngModel)]="userName"><br>
         <button type="submit" class="btn btn-success" (click)="submitUser()">Search</button>
     </div>
 
@@ -22,18 +22,17 @@
                     <cite>
                         <div class="row">
                             <div class="col-md-6">
-                                <h4><u> Location</u>:{{user.location}} </h4><br><br>
-                                <h4><u>Followers</u>:{{user.followers}}</h4><br><br>
-                                <h4><u>Following:</u>{{user.following}}</h4><br><br>
-                                <h4><u>Repositories Number</u>:{{user.public_repos}}</h4><br><br>
-                                <a href="{{user.html_url}}" target="_blank">Click here to see the Repositories
+                                <h4><u>Followers</u>:{{user.followers}}</h4><br>
+                                <h4><u>Following:</u>{{user.following}}</h4><br>
+                                <h4><u>Total Repositories</u>:{{user.public_repos}}</h4><br><br>
+                                <a style="color: white;" href="{{user.html_url}}" target="_blank">Click here to see the Repositories
                                     details</a><br><br>
                             </div>
                             <div class="col-md-6">
-                                <ul>
+                                <!-- <ul>
                                     <li *ngFor="let repo of repository">{{repo.name}} <br>{{repo.description}} <br><br>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </cite>
